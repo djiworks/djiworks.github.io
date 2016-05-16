@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: http://www.http://djiworks.github.io/sitemap.xml
