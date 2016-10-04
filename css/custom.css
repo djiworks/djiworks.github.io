@@ -35,15 +35,8 @@ h1
 	margin-right: 20px;
 }
 
-#projets, #divers
-{
-	background-color: #056305;
-	color: #FFF;
-}
-
-#projets a, #divers a
-{
-	color: #FFF;
+#tags_cloud {
+  min-height: 300px;
 }
 
 .divide

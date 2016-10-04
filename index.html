@@ -21,15 +21,22 @@
 	
     <!-- Les styles -->
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <link href="css/jqcloud.min.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/custom.css" rel="stylesheet">
-   	
+    <link href="css/custom.css" rel="stylesheet">	
    	<!-- Les scripts -->
    	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bind-polyfill.min.js"></script>
+    <script src="js/jqcloud.min.js"></script>
+    <script src="js/smooth-scroll.min.js"></script>
      
 	
 	<!-- Favicon -->
@@ -180,108 +187,7 @@
     </div>
     </section>
     <section id="projets">
-    <div class="container">
-      <h1><i>Mes projets</i></h1>
-       <div class="row">
-            <div class="col-lg-4 divide">
-              <img src="images/used/web.png" alt="Image Web" class="pull-left pict img-responsive"/><h3>Web</h3><br/>
-              <div class="media">
-            <a class="pull-left" href="#">
-               <img class="media-object" src="images/used/html5.png" alt="Logo HTML5">
-            </a>
-            <div class="media-body">
-              <h4 class="media-heading">ShaviRoom Web</h4>
-              Salon de tchat « re masterisé » 2.0. En plus de fournir un salon de conversation, il permet aux utilisateurs de <strong>partager la même vidéo        issu de Youtube</strong> au même moment et en discuter en direct. <strong>Développée en Html5 et JavaScript uniquement</strong>, le client web        communique avec un <strong>serveur Node.js©</strong> distant avec le format <strong>JSON</strong>. 
-            </div>
-          </div>
-          
-          <div class="media">
-            <a class="pull-left" href="#">
-             <img class="media-object" src="images/app/stats.png" alt="Pie Chart">
-            </a>
-            <div class="media-body">
-              <h4 class="media-heading">Générateur de graphiques</h4>
-              <strong>Module web</strong> pour la <strong>DDE Réunion</strong>. Il fournit un ensemble de <strong>graphiques</strong> provenant de requêtes         <strong>SQL sur des milliers de ligne</strong>. Le module devait mettre en évidence les chiffres clés du parc informatique.
-              </div>
-          </div>
-          
-          <div class="media">
-            <a class="pull-left" href="#">
-              <img class="media-object" src="images/app/cms.png" alt="CMS">
-            </a>
-            <div class="media-body">
-              <h4 class="media-heading">Intranet commercial</h4>
-              Site intranet développé avec <strong>Drupal©</strong>. De nombreux modules ont du être implémentés afin de répondre à des besoins spécifiques.        <strong>Plus de 100 utilisateurs</strong> l'utilisent aujourd'hui. Ce site permet à ses utilisateurs de générer des affiches personnalisées.          </div>
-          </div>
-            </div>
-            <div class="col-lg-4 divide">
-              <img src="images/used/mobile.png" alt="Image Mobile" class="pull-left pict img-responsive"/><h3>Mobile</h3><br/>
-              <div class="media">
-            <a class="pull-left" href="#">
-              <img class="media-object" src="images/app/smarttv.png" alt="SmartTV">
-            </a>
-            <div class="media-body">
-              <h4 class="media-heading">Chrono TV App</h4>
-              <strong>Application TV</strong>. Prototype visant à découvrir le développement sur de nouvelles plateformes. La technologie utilisée ici est du <strong>JavaScript</strong>. Le Simulateur est basé sur VirtualBox et l'IDE sur Eclipse. Pour plus d'informations sur ce <a href="http://www.samsungdforum.com/devtools/sdkdownload" rel="nofollow" title="SDK Samsung Smart TV">SDK...</a>
-            </div>
-          </div>
-          
-          <div class="media">
-            <a class="pull-left" href="#">
-              <img class="media-object" src="images/app/shavi.png" alt="ShaviRoom">
-            </a>
-            <div class="media-body">
-              <h4 class="media-heading">ShaviRoom Mobile</h4>
-              ShaviRoom Mobile donne accès à un <strong>tchat</strong> comme dans sa version web. Elle offre des fonctions de <strong>partage de graphiques dynamiquement.</strong> Types de graphiques disponibles: Pie Chart, Bar Chart et Line Chart. Développée en client <strong>Action Script 3</strong> et serveur <strong>Node.js©</strong>. 
-            </div>
-          </div>
-          
-          <div class="media">
-            <a class="pull-left" href="#">
-              <img class="media-object" src="images/app/trafic.png" alt="...">
-            </a>
-            <div class="media-body">
-              <h4 class="media-heading">Trafic Chrono</h4>
-              <strong>Développée en Objective-C</strong> et <strong>Node.js©</strong> pour la partie serveur, cette application vous permet de pointer l'heure et le lieu des points d'un itinéraire afin d'analyser le temps passé en voiture. <strong>En cours de développement</strong>.
-            </div>
-          </div>        </div>
-            <div class="col-lg-4">
-              <img src="images/used/software.png" alt="Image Logiciel" class="pull-left pict img-responsive"/><h3>Desktop</h3><br/>
-              <div class="media">
-            <a class="pull-left" href="#">
-              <img class="media-object" src="images/app/bd.png" alt="e-Serv">
-            </a>
-            <div class="media-body">
-              <h4 class="media-heading">Belf e-Serv</h4>
-              Ce projet était de réaliser un logiciel en <strong>Visual Basic</strong> permettant de gérer l'activité de conciergerie privée. Elle se compose de fonctionnalités visant à gérer les clients mais aussi les partenaires ou encore à générer les documents administratifs. 
-            </div>
-          </div>
-          
-          <div class="media">
-            <a class="pull-left" href="#">
-              <img class="media-object" src="images/app/nms.png" alt="My NMS">
-            </a>
-            <div class="media-body">
-              <h4 class="media-heading">myNMS</h4>
-              My Nursing Management Software (traduit littéralement par Mon Logiciel de gestion infirmier) a été conçu pour répondre à la demande d'un cabinet d'infirmier. Infirmiers, soins, cotations, planning, patients, ordonnances, docteurs, tous font l'objet d'une fonctionnalité du logiciel. Il a été développé en <strong>Visual Basic</strong>
-            </div>
-          </div>
-          
-          <div class="media">
-            <a class="pull-left" href="#">
-              <img class="media-object" src="images/app/Java.png" alt="Logo java">
-            </a>
-            <div class="media-body">
-              <h4 class="media-heading">User Profiler</h4>
-              Ce programme en <strong>Java™</strong> reproduit les effets du <strong>Text Mining (fouille de texte)</strong> pour analyser un ensemble de texte et créer des matrices de mots et documents basées sur la technologie <strong>Apache Lucene</strong> et la librairie <strong>Semantic Vectors</strong>. Après analyse, il sera capable de déterminer le degrés de pertinence entre les centres intérêts de l'utilisateur analysé et un nouveau texte. 
-            </div>
-          </div>
-            </div>
-       </div> 
-      <p class="text-center">
-        <a href="https://github.com/djiworks" target="_blank" rel="nofollow"><span class="glyphicon glyphicon-hand-right blue"></span> Mon GitHub</a>
-      </p>
-    </div>
+      <div id="tags_cloud"></div>
     </section>
     <section id="galerie">
       <div class="container">
@@ -394,6 +300,10 @@
               <ul>
                   <li><a href="http://jquery.com/" rel="nofollow">jQuery 1.8.2</a> sous licence MIT et GPL</li>
                   
+                  <li><a href="http://unitegallery.net/index.php?page=documentation" rel="nofollow">Unite Gallery</a> sous licence MIT</li>
+                  
+                  <li><a href="http://mistic100.github.io/jQCloud/" rel="nofollow">jQCloud</a> sous licence MIT</li>
+                  
                   <li><a href="http://cferdinandi.github.io/smooth-scroll/" rel="nofollow">Smooth Scroll</a> sous licence MIT</li>
                   
                   <li><a href="http://getbootstrap.com/" rel="nofollow">Bootstrap</a> sous licence MIT</li>
@@ -457,12 +367,7 @@
           </div>
         </div>
       </div>
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/bind-polyfill.min.js"></script>
-	<script src="js/smooth-scroll.min.js"></script>
+  <script src="js/app.js"></script>
 	<script>
     	smoothScroll.init();
 	</script>
