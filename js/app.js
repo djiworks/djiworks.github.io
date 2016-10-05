@@ -9,13 +9,33 @@ var linkTemplate = function (word) {
   if (!word.link) {
     return word.text
   }
+  if (word.link === "handler") {
+    return '<a href="javascript:void(0);">' + word.text + '</a>'
+  }
   return '<a href="' + word.link +
   '" rel="nofollow" target="_blank" title="' +
   word.text + '">' + word.text + '</a>'
 }
 
+var popoverTemplate = function () {
+  //This refer to jQuery object from jQCloud
+  console.log(this.data('id'))
+  this.popover({
+    trigger: 'hover',
+    placement: 'auto right',
+    html: true,
+    content: $("#" + this.data('id')).html()
+  })
+}
+
 var words = [
-  {text: "ShaviRoom", weight: WEIGHT_PROJECT},
+  {
+    text: "ShaviRoom",
+    weight: WEIGHT_PROJECT,
+    link: "handler",
+    html: {'data-id': 'shaviroom'},
+    afterWordRender: popoverTemplate
+  },
   {text: "Web", weight: WEIGHT_CATEGORY},
   {text: "Html5", weight: WEIGHT_LANGUAGE},
   {text: "JavaScript", weight: WEIGHT_HIHLIGHT},
@@ -30,9 +50,21 @@ var words = [
     weight: WEIGHT_TECHNO
   },
   {text: "Php", weight: WEIGHT_LANGUAGE},
-  {text: "Générateur de graphique", weight: WEIGHT_PROJECT},
+  {
+    text: "Générateur de graphique",
+    weight: WEIGHT_PROJECT,
+    link: "handler",
+    html: {'data-id': 'chartgen'},
+    afterWordRender: popoverTemplate
+  },
   {text: "SQL", weight: WEIGHT_HIHLIGHT},
-  {text: "Intranet", weight: WEIGHT_PROJECT},
+  {
+    text: "Intranet Commercial",
+    weight: WEIGHT_PROJECT,
+    link: "handler",
+    html: {'data-id': 'intranet'},
+    afterWordRender: popoverTemplate
+  },
   {
     text: "Drupal",
     link: "https://www.drupal.org/",
@@ -51,16 +83,46 @@ var words = [
   {text: "C/C++", weight: WEIGHT_LANGUAGE},
   {text: "Logiciel", weight: WEIGHT_CATEGORY},
   {text: "RaspberryPI", weight: WEIGHT_TECHNO},
-  {text: "Chrono TV app", weight: WEIGHT_PROJECT},
-  {text: "Trafic Chrono", weight: WEIGHT_PROJECT},
+  {
+    text: "Chrono TV app",
+    weight: WEIGHT_PROJECT,
+    link: "handler",
+    html: {'data-id': 'chronotv'},
+    afterWordRender: popoverTemplate
+  },
+  {
+    text: "Trafic Chrono",
+    weight: WEIGHT_PROJECT,
+    link: "handler",
+    html: {'data-id': 'trafic'},
+    afterWordRender: popoverTemplate
+  },
   {text: "Visual Basic", weight: WEIGHT_LANGUAGE},
   {text: "Erlang", weight: WEIGHT_LANGUAGE},
   {text: "MySql", weight: WEIGHT_TECHNO},
   {text: "SQL Server", weight: WEIGHT_TECHNO},
-  {text: "e-Serv concergerie", weight: WEIGHT_PROJECT},
-  {text: "Nursing Management Software", weight: WEIGHT_PROJECT},
+  {
+    text: "e-Serv concergerie",
+    weight: WEIGHT_PROJECT,
+    link: "handler",
+    html: {'data-id': 'eserv'},
+    afterWordRender: popoverTemplate
+  },
+  {
+    text: "Nursing Management Software",
+    weight: WEIGHT_PROJECT,
+    link: "handler",
+    html: {'data-id': 'nms'},
+    afterWordRender: popoverTemplate
+  },
   {text: "Smart Tv", weight: WEIGHT_UNDEVELOPED},
-  {text: "User Profiling", weight: WEIGHT_PROJECT},
+  {
+    text: "User Profiling",
+    weight: WEIGHT_PROJECT,
+    link: "handler",
+    html: {'data-id': 'userprof'},
+    afterWordRender: popoverTemplate
+  },
   {text: "Java", weight: WEIGHT_HIHLIGHT},
   {text: "Text mining", weight: WEIGHT_UNDEVELOPED},
   {text: "Apache Lucene", weight: WEIGHT_UNDEVELOPED},

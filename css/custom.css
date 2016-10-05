@@ -35,6 +35,11 @@ h1
 	margin-right: 20px;
 }
 
+.pull-left
+{
+  margin-right: 10px;
+}
+
 #tags_cloud {
   min-height: 300px;
 }
@@ -54,6 +59,17 @@ h1
 .media-body
 {
 	text-align: justify;
+  color: #223376;
+  font-size: 12px;
+}
+
+.media-heading {
+  color: #008000;
+}
+
+.media-object {
+  height: 64px;
+  width: 64px;
 }
 
 .align-ver
