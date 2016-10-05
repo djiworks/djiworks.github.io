@@ -4,19 +4,40 @@ var WEIGHT_HIHLIGHT = 10;
 var WEIGHT_UNDEVELOPED = 5.5;
 var WEIGHT_TECHNO = 8;
 var WEIGHT_LANGUAGE = 5;
+
+var linkTemplate = function (word) {
+  if (!word.link) {
+    return word.text
+  }
+  return '<a href="' + word.link +
+  '" rel="nofollow" target="_blank" title="' +
+  word.text + '">' + word.text + '</a>'
+}
+
 var words = [
   {text: "ShaviRoom", weight: WEIGHT_PROJECT},
   {text: "Web", weight: WEIGHT_CATEGORY},
   {text: "Html5", weight: WEIGHT_LANGUAGE},
   {text: "JavaScript", weight: WEIGHT_HIHLIGHT},
-  {text: "Node.js", weight: WEIGHT_TECHNO},
-  {text: "Meteor.js", weight: WEIGHT_TECHNO},
+  {
+    text: "Node.js",
+    link: "https://nodejs.org/en/",
+    weight: WEIGHT_TECHNO
+  },
+  {
+    text: "Meteor.js",
+    link: "https://www.meteor.com/",
+    weight: WEIGHT_TECHNO
+  },
   {text: "Php", weight: WEIGHT_LANGUAGE},
-  {text: "Graphique", weight: WEIGHT_UNDEVELOPED},
   {text: "Générateur de graphique", weight: WEIGHT_PROJECT},
   {text: "SQL", weight: WEIGHT_HIHLIGHT},
   {text: "Intranet", weight: WEIGHT_PROJECT},
-  {text: "Drupal", weight: WEIGHT_TECHNO},
+  {
+    text: "Drupal",
+    link: "https://www.drupal.org/",
+    weight: WEIGHT_TECHNO
+  },
   {text: "CMS", weight: WEIGHT_TECHNO},
   {
     text: "SDK Samsung Smart TV",
@@ -75,5 +96,6 @@ $('#tags_cloud').jQCloud(words, {
     "#A0E085"
   ],
   steps: 7,
-  delay: 5
+  delay: 5,
+  template: linkTemplate
 });
