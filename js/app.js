@@ -19,7 +19,6 @@ var linkTemplate = function (word) {
 
 var popoverTemplate = function () {
   //This refer to jQuery object from jQCloud
-  console.log(this.data('id'))
   this.popover({
     trigger: 'hover',
     placement: 'auto right',
@@ -160,4 +159,10 @@ $('#tags_cloud').jQCloud(words, {
   steps: 7,
   delay: 5,
   template: linkTemplate
+});
+
+$('.ratings').barrating({
+  theme: 'bootstrap-stars',
+  showSelectedRating: false,
+  readonly: true
 });

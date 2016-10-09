@@ -23,6 +23,7 @@
  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
  <link href="css/bootstrap.min.css" rel="stylesheet">
  <link href="css/jqcloud.min.css" rel="stylesheet">
+ <link href="css/bootstrap-stars.css" rel="stylesheet">
  <link href="css/custom.css" rel="stylesheet">	
  <!-- Les scripts -->
  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -37,6 +38,7 @@
     <script src="js/bind-polyfill.min.js"></script>
     <script src="js/jqcloud.min.js"></script>
     <script src="js/smooth-scroll.min.js"></script>
+    <script src="js/jquery.barrating.min.js"></script>
 
 
     <!-- Favicon -->
@@ -187,7 +189,96 @@
       </div>
     </section>
     <section id="projets">
-      <div id="tags_cloud"></div>
+      <div class="container">
+        <h1><i>Mes compétences</i></h1>
+        <div id="tags_cloud"></div>
+        <div class="row center">
+          <div class="col-lg-4 divide">
+            <label class="rating-label">Programmation</label>
+            <select class="ratings" autocomplete="off">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5" selected="selected">5</option>
+            </select>
+            <br/>
+            <label class="rating-label">Gestion de base de données</label>
+            <select class="ratings" autocomplete="off">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4" selected="selected">4</option>
+              <option value="5">5</option>
+            </select>
+            <br/>
+            <label class="rating-label">Administration Système</label>
+            <select class="ratings" autocomplete="off">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3" >3</option>
+              <option value="4" selected="selected">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <div class="col-lg-4 divide">
+            <label class="rating-label">Analyse des besoins</label>
+            <select class="ratings" autocomplete="off">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3" >3</option>
+              <option value="4">4</option>
+              <option value="5" selected="selected">5</option>
+            </select>
+            <br/>
+            <label class="rating-label">Développement produit</label>
+            <select class="ratings" autocomplete="off">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3" selected="selected">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+            <br/>
+            <label class="rating-label">Etude technique</label>
+            <select class="ratings" autocomplete="off">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3" >3</option>
+              <option value="4" selected="selected">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <div class="col-lg-4">
+            <label class="rating-label">Gestion de projet</label>
+            <select class="ratings" autocomplete="off">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3" >3</option>
+              <option value="4" selected="selected">4</option>
+              <option value="5">5</option>
+            </select>
+            <br/>
+            <label class="rating-label">Formation technique</label>
+            <select class="ratings" autocomplete="off">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3" >3</option>
+              <option value="4" selected="selected">4</option>
+              <option value="5">5</option>
+            </select>
+            <br/>
+            <label class="rating-label">Economie d'entreprise</label>
+            <select class="ratings" autocomplete="off">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3" selected="selected">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="galerie">
       <div class="container">
@@ -302,7 +393,9 @@
 
             <li><a href="http://unitegallery.net/index.php?page=documentation" rel="nofollow">Unite Gallery</a> sous licence MIT</li>
 
-            <li><a href="http://mistic100.github.io/jQCloud/" rel="nofollow">jQCloud</a> sous licence MIT</li>
+            <li><a href="http://mistic100.github.io/jQCloud/" rel="nofollow">jQuery Bar Rating</a> sous licence MIT</li>
+
+            <li><a href="https://github.com/antennaio/jquery-bar-rating" rel="nofollow">jQCloud</a> sous licence MIT</li>
 
             <li><a href="http://cferdinandi.github.io/smooth-scroll/" rel="nofollow">Smooth Scroll</a> sous licence MIT</li>
 
@@ -365,9 +458,9 @@
     </div>
     <script src="js/app.js"></script>
     <script>
-     smoothScroll.init();
-   </script>
-   <div style="display:none;">
+      smoothScroll.init();
+    </script>
+    <div style="display:none;">
      <div id="shaviroom" class="media">
       <a class="pull-left" href="#">
        <img class="media-object" src="images/app/shavi.png" alt="Logo HTML5">
