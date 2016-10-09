@@ -37,6 +37,8 @@ var words = [
   },
   {text: "Web", weight: WEIGHT_CATEGORY},
   {text: "Html5", weight: WEIGHT_LANGUAGE},
+  {text: "CSS", weight: WEIGHT_LANGUAGE},
+  {text: "Less", weight: WEIGHT_LANGUAGE},
   {text: "JavaScript", weight: WEIGHT_HIHLIGHT},
   {
     text: "Node.js",
@@ -77,6 +79,7 @@ var words = [
   },
   {text: "ActionScript 3", weight: WEIGHT_LANGUAGE},
   {text: "iOS", weight: WEIGHT_TECHNO},
+  {text: "SIG", weight: WEIGHT_TECHNO},
   {text: "Objective-C", weight: WEIGHT_LANGUAGE},
   {text: "Python", weight: WEIGHT_LANGUAGE},
   {text: "C/C++", weight: WEIGHT_LANGUAGE},
