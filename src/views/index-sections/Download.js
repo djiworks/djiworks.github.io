@@ -16,66 +16,28 @@ function Download() {
         <Container>
           <Row className="justify-content-md-center">
             <Col className="text-center" lg="8" md="12">
-              <h3 className="title">Do you love this Bootstrap 4 UI Kit?</h3>
+              <h3 className="title">Besoin d'aide pour votre projet ?</h3>
               <h5 className="description">
-                Cause if you do, it can be yours for FREE. Hit the button below
-                to navigate to Creative Tim or Invision where you can find the
-                kit in HTML or Sketch/PSD format. Start a new project or give an
-                old Bootstrap project a new look!
+                Vous souhaitez simplement un conseil, un accompagnement ? Ou vous êtes à la recherche
+                d'un prestataire ? Echangeons ensemble sur votre idée sans formalités ni investissement.
+                <blockquote>
+                  <p className="blockquote blockquote-primary">
+                    "Une idée ne vaut rien, sa mise en action vaut tout !"
+                    <br/><br/>
+                    <small>- Pierre Kosciusko Morizet, 2014</small>
+                  </p>
+                </blockquote>
               </h5>
             </Col>
             <Col className="text-center" lg="8" md="12">
               <Button
                 className="btn-round mr-1"
                 color="info"
-                href="https://www.creative-tim.com/product/now-ui-kit-react?ref=nukr-index-page"
+                href="mailto:djothi974[at]gmail.com"
                 role="button"
                 size="lg"
               >
-                Download React
-              </Button>
-              <Button
-                className="btn-round"
-                color="primary"
-                href="https://www.invisionapp.com/now?ref=creativetim"
-                outline
-                role="button"
-                size="lg"
-                target="_blank"
-              >
-                Download PSD/Sketch
-              </Button>
-            </Col>
-          </Row>
-          <br></br>
-          <br></br>
-          <br></br>
-          <Row className="text-center mt-5">
-            <Col className="ml-auto mr-auto" md="8">
-              <h2>Want more?</h2>
-              <h5 className="description">
-                We're going to launch{" "}
-                <a
-                  href="http://demos.creative-tim.com/now-ui-kit-pro-react/#/presentation?ref=nukr-index-page"
-                  onClick={e => e.preventDefault()}
-                >
-                  Now UI Kit PRO React
-                </a>
-                . It will have huge number of components, sections and example
-                pages so you can start your development with a badass Bootstrap
-                4 UI Kit.
-              </h5>
-            </Col>
-            <Col md="12">
-              <Button
-                className="btn-neutral btn-round"
-                color="default"
-                href="http://demos.creative-tim.com/now-ui-kit-pro-react/#/presentation?ref=nukr-index-page"
-                size="lg"
-                disabled
-              >
-                <i className="now-ui-icons arrows-1_share-66 mr-1"></i>
-                Upgrade to PRO
+                Rencontrons nous !
               </Button>
             </Col>
           </Row>
@@ -83,31 +45,33 @@ function Download() {
           <br></br>
           <Row className="justify-content-md-center sharing-area text-center">
             <Col className="text-center" lg="8" md="12">
-              <h3>Thank you for supporting us!</h3>
+              <h3>Suivez mon actualité</h3>
             </Col>
             <Col className="text-center" lg="8" md="12">
               <Button
                 className="btn-neutral btn-icon btn-round"
                 color="twitter"
-                href="https://www.twitter.com/creativetim?ref=creativetim"
+                href="https://twitter.com/djiworks"
                 id="tooltip86114138"
                 size="lg"
                 target="_blank"
+                rel="nofollow"
               >
                 <i className="fab fa-twitter"></i>
               </Button>
               <UncontrolledTooltip delay={0} target="tooltip86114138">
-                Follow us
+                Follow me
               </UncontrolledTooltip>
               <Button
                 className="btn-neutral btn-icon btn-round"
-                color="facebook"
-                href="https://www.facebook.com/creativetim?ref=creativetim"
+                color="instagram"
+                href="https://www.instagram.com/lilj974"
                 id="tooltip735272548"
                 size="lg"
                 target="_blank"
+                rel="nofollow"
               >
-                <i className="fab fa-facebook-square"></i>
+                <i className="fab fa-instagram"></i>
               </Button>
               <UncontrolledTooltip delay={0} target="tooltip735272548">
                 Like us
@@ -115,20 +79,21 @@ function Download() {
               <Button
                 className="btn-neutral btn-icon btn-round"
                 color="linkedin"
-                href="https://www.linkedin.com/company-beta/9430489/?ref=creativetim"
+                href="https://www.linkedin.com/in/djothi-grondin-5b60b3100/"
                 id="tooltip647117716"
                 size="lg"
                 target="_blank"
+                rel="nofollow"
               >
                 <i className="fab fa-linkedin"></i>
               </Button>
               <UncontrolledTooltip delay={0} target="tooltip647117716">
-                Follow us
+                Follow me
               </UncontrolledTooltip>
               <Button
                 className="btn-neutral btn-icon btn-round"
                 color="github"
-                href="https://github.com/creativetimofficial/now-ui-kit-react?ref=creativetim"
+                href="https://github.com/djiworks"
                 id="tooltip331904895"
                 size="lg"
                 target="_blank"

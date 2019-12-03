@@ -83,7 +83,7 @@ function IndexNavbar() {
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="/computer-page"
+                  href="/landing-page"
                 >
                   <i className="now-ui-icons tech_laptop"></i>
                   <p>Informatique</p>
@@ -101,7 +101,9 @@ function IndexNavbar() {
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="/finance-page"
+                  href="https://djiworks.gitlab.io/financiee/"
+                  target="_blank"
+                  rel="nofollow"
                 >
                   <i className="now-ui-icons business_money-coins"></i>
                   <p>Finance</p>
