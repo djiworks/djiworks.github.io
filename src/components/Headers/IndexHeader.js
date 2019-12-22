@@ -35,7 +35,7 @@ function IndexHeader() {
         <Container>
           <div className="content-center brand">
             <img
-              alt="..."
+              alt="logo djiworks"
               className="n-logo"
               src={require("assets/img/now-logo.png")}
             ></img>

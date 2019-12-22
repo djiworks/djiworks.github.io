@@ -84,13 +84,13 @@ function ProfilePage() {
             <h5 className="description">
               <strong>Technicien</strong> depuis 2009 et <strong>Ingénieur</strong> depuis 2014,
               j'ai brassé divers <strong>technologies</strong> et <strong>méthodes de conception</strong>
-              afin de parfaire mon expertise technique en matière de <strong>services numériques</strong>. Je m'attache depuis 2016 à
+              &nbsp;afin de parfaire mon expertise technique en matière de <strong>services numériques</strong>. Je m'attache depuis 2016 à
               étendre mes compétences en tant que <strong>chef de projet</strong> et <strong>ingénieur d'affaires</strong>.
               <br/>
               <br/>
-              J'initie aujourd'hui de <strong>nouveaux projets</strong> depuis sa conception jusqu'à son <strong>lancement sur le marché</strong>.
+              J'initie aujourd'hui de <strong>nouveaux projets</strong> depuis leur conception jusqu'à leur <strong>lancement sur le marché</strong>.
               Grâce à ma volonté d'<strong>entreprendre</strong>, je me suis constitué un <strong>réseau technique et affaire</strong>
-              sur l'ensemble de <strong>l'île de la Réunion</strong>.
+              &nbsp;sur l'ensemble de <strong>l'île de la Réunion</strong>.
               À ce titre, je suis capable d'<strong>accompagner des porteurs de projet afin de les former ou de les conseiller pour
               mener à bien leurs objectifs.</strong>
             </h5>
@@ -137,18 +137,6 @@ function ProfilePage() {
                         }}
                       >
                         <i className="now-ui-icons business_money-coins"></i>
-                      </NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink
-                        className={pills === "4" ? "active" : ""}
-                        href="#pablo"
-                        onClick={e => {
-                          e.preventDefault();
-                          setPills("4");
-                        }}
-                      >
-                        <i className="now-ui-icons ui-2_like"></i>
                       </NavLink>
                     </NavItem>
                   </Nav>
@@ -335,37 +323,6 @@ function ProfilePage() {
                             </Button>
                           </CardBody>
                         </Card>
-                      </Col>
-                    </Row>
-                  </Col>
-                </TabPane>
-                <TabPane tabId="pills4">
-                  <h3 className="text-center">Ils me connaissent...</h3>
-                  <Col className="ml-auto mr-auto" md="10">
-                    <Row className="collections">
-                      <Col md="6">
-                        <img
-                          alt="..."
-                          className="img-raised"
-                          src={require("assets/img/bg1.jpg")}
-                        ></img>
-                        <img
-                          alt="..."
-                          className="img-raised"
-                          src={require("assets/img/bg3.jpg")}
-                        ></img>
-                      </Col>
-                      <Col md="6">
-                        <img
-                          alt="..."
-                          className="img-raised"
-                          src={require("assets/img/bg8.jpg")}
-                        ></img>
-                        <img
-                          alt="..."
-                          className="img-raised"
-                          src={require("assets/img/bg7.jpg")}
-                        ></img>
                       </Col>
                     </Row>
                   </Col>

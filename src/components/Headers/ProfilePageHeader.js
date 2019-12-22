@@ -12,7 +12,7 @@ function ProfilePageHeader() {
     if (window.innerWidth > 991) {
       const updateScroll = () => {
         let windowScrollTop = window.pageYOffset / 3;
-        (pageHeader.current.style || {}).transform =
+        ((pageHeader || {}).current.style || {}).transform =
           "translate3d(0," + windowScrollTop + "px,0)";
       };
       window.addEventListener("scroll", updateScroll);
@@ -36,7 +36,7 @@ function ProfilePageHeader() {
         ></div>
         <Container>
           <div className="photo-container">
-            <img alt="..." src={require("assets/img/ryan.jpg")}></img>
+            <img alt="photo de djothi" src={require("assets/img/ryan.jpg")}></img>
           </div>
           <h3 className="title">Djothi Grondin</h3>
           <p className="category">Technical & Business Engineer</p>

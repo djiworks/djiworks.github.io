@@ -3,23 +3,18 @@ import React from "react";
 // reactstrap components
 import {
   Button,
-  Input,
-  InputGroupAddon,
-  InputGroupText,
-  InputGroup,
   Container,
   Row,
-  Col
+  Col,
+  Progress,
 } from "reactstrap";
 
 // core components
-import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
+import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import LandingPageHeader from "components/Headers/LandingPageHeader.js";
-import DefaultFooter from "components/Footers/DefaultFooter.js";
+import DarkFooter from "components/Footers/DarkFooter.js";
 
 function LandingPage() {
-  const [firstFocus, setFirstFocus] = React.useState(false);
-  const [lastFocus, setLastFocus] = React.useState(false);
   React.useEffect(() => {
     document.body.classList.add("landing-page");
     document.body.classList.add("sidebar-collapse");
@@ -31,97 +26,100 @@ function LandingPage() {
   });
   return (
     <>
-      <ExamplesNavbar />
+      <IndexNavbar />
       <div className="wrapper">
         <LandingPageHeader />
         <div className="section section-about-us">
           <Container>
             <Row>
               <Col className="ml-auto mr-auto text-center" md="8">
-                <h2 className="title">Who we are?</h2>
-                <h5 className="description">
-                  According to the National Oceanic and Atmospheric
-                  Administration, Ted, Scambos, NSIDClead scentist, puts the
-                  potentially record low maximum sea ice extent tihs year down
-                  to low ice extent in the Pacific and a late drop in ice extent
-                  in the Barents Sea.
-                </h5>
+                <h2 className="title">Mes compétences</h2>
               </Col>
             </Row>
             <div className="separator separator-primary"></div>
             <div className="section-story-overview">
-              <Row>
-                <Col md="6">
-                  <div
-                    className="image-container image-left"
-                    style={{
-                      backgroundImage:
-                        "url(" + require("assets/img/login.jpg") + ")"
-                    }}
-                  >
-                    <p className="blockquote blockquote-info">
-                      "Over the span of the satellite record, Arctic sea ice has
-                      been declining significantly, while sea ice in the
-                      Antarctichas increased very slightly" <br></br>
-                      <br></br>
-                      <small>-NOAA</small>
-                    </p>
+              <Row className="text-center">
+                <Col md="4">
+                  <h3>Technique</h3>
+                  <div className="progress-container progress-success">
+                    <h4 className="progress-badge">Programmation</h4>
+                    <Progress max="100" value="90">
+                      <span className="progress-value">90%</span>
+                    </Progress>
                   </div>
-                  <div
-                    className="image-container"
-                    style={{
-                      backgroundImage:
-                        "url(" + require("assets/img/bg3.jpg") + ")"
-                    }}
-                  ></div>
+                  <div className="progress-container progress-primary">
+                    <h4 className="progress-badge">Base de données</h4>
+                    <Progress max="100" value="85">
+                      <span className="progress-value">85%</span>
+                    </Progress>
+                  </div>
+                  <div className="progress-container progress-warning">
+                    <h4 className="progress-badge">Administration système</h4>
+                    <Progress max="100" value="75">
+                      <span className="progress-value">75%</span>
+                    </Progress>
+                  </div>
                 </Col>
-                <Col md="5">
-                  <div
-                    className="image-container image-right"
-                    style={{
-                      backgroundImage:
-                        "url(" + require("assets/img/bg1.jpg") + ")"
-                    }}
-                  ></div>
-                  <h3>
-                    So what does the new record for the lowest level of winter
-                    ice actually mean
-                  </h3>
-                  <p>
-                    The Arctic Ocean freezes every winter and much of the
-                    sea-ice then thaws every summer, and that process will
-                    continue whatever happens with climate change. Even if the
-                    Arctic continues to be one of the fastest-warming regions of
-                    the world, it will always be plunged into bitterly cold
-                    polar dark every winter. And year-by-year, for all kinds of
-                    natural reasons, there’s huge variety of the state of the
-                    ice.
-                  </p>
-                  <p>
-                    For a start, it does not automatically follow that a record
-                    amount of ice will melt this summer. More important for
-                    determining the size of the annual thaw is the state of the
-                    weather as the midnight sun approaches and temperatures
-                    rise. But over the more than 30 years of satellite records,
-                    scientists have observed a clear pattern of decline,
-                    decade-by-decade.
-                  </p>
-                  <p>
-                    The Arctic Ocean freezes every winter and much of the
-                    sea-ice then thaws every summer, and that process will
-                    continue whatever happens with climate change. Even if the
-                    Arctic continues to be one of the fastest-warming regions of
-                    the world, it will always be plunged into bitterly cold
-                    polar dark every winter. And year-by-year, for all kinds of
-                    natural reasons, there’s huge variety of the state of the
-                    ice.
-                  </p>
+                <Col md="4">
+                  <h3>Analyse</h3>
+                    <div className="progress-container progress-success">
+                      <h4 className="progress-badge">Analyse des besoins</h4>
+                      <Progress max="100" value="90">
+                        <span className="progress-value">90%</span>
+                      </Progress>
+                    </div>
+                    <div className="progress-container progress-primary">
+                      <h4 className="progress-badge">Développement produit</h4>
+                      <Progress max="100" value="70">
+                        <span className="progress-value">70%</span>
+                      </Progress>
+                    </div>
+                    <div className="progress-container progress-info">
+                      <h4 className="progress-badge">Architecture et Conception technique</h4>
+                      <Progress max="100" value="85">
+                        <span className="progress-value">85%</span>
+                      </Progress>
+                    </div>
+                </Col>
+                <Col md="4">
+                  <h3>Management</h3>
+                    <div className="progress-container progress-success">
+                      <h4 className="progress-badge">Gestion de projet</h4>
+                      <Progress max="100" value="80">
+                        <span className="progress-value">80%</span>
+                      </Progress>
+                    </div>
+                    <div className="progress-container progress-info">
+                      <h4 className="progress-badge">Andragogie</h4>
+                      <Progress max="100" value="75">
+                        <span className="progress-value">75%</span>
+                      </Progress>
+                    </div>
+                    <div className="progress-container progress-warning">
+                      <h4 className="progress-badge">Economie d'entreprise</h4>
+                      <Progress max="100" value="60">
+                        <span className="progress-value">60%</span>
+                      </Progress>
+                    </div>
                 </Col>
               </Row>
             </div>
+            <p className="text-center">
+              <Button
+                className="btn-round ml-4"
+                color="warning"
+                id="tooltip340339234"
+                size="lg"
+                href="https://www.doyoubuzz.com/djothi-grondin"
+                rel="nofollow"
+                target="_blank"
+              >
+                Encore plus de détails ici
+              </Button>
+            </p>
           </Container>
         </div>
-        <div className="section section-team text-center">
+        {/* <div className="section section-team text-center">
           <Container>
             <h2 className="title">Here is our team</h2>
             <div className="team">
@@ -253,73 +251,8 @@ function LandingPage() {
               </Row>
             </div>
           </Container>
-        </div>
-        <div className="section section-contact-us text-center">
-          <Container>
-            <h2 className="title">Want to work with us?</h2>
-            <p className="description">Your project is very important to us.</p>
-            <Row>
-              <Col className="text-center ml-auto mr-auto" lg="6" md="8">
-                <InputGroup
-                  className={
-                    "input-lg" + (firstFocus ? " input-group-focus" : "")
-                  }
-                >
-                  <InputGroupAddon addonType="prepend">
-                    <InputGroupText>
-                      <i className="now-ui-icons users_circle-08"></i>
-                    </InputGroupText>
-                  </InputGroupAddon>
-                  <Input
-                    placeholder="First Name..."
-                    type="text"
-                    onFocus={() => setFirstFocus(true)}
-                    onBlur={() => setFirstFocus(false)}
-                  ></Input>
-                </InputGroup>
-                <InputGroup
-                  className={
-                    "input-lg" + (lastFocus ? " input-group-focus" : "")
-                  }
-                >
-                  <InputGroupAddon addonType="prepend">
-                    <InputGroupText>
-                      <i className="now-ui-icons ui-1_email-85"></i>
-                    </InputGroupText>
-                  </InputGroupAddon>
-                  <Input
-                    placeholder="Email..."
-                    type="text"
-                    onFocus={() => setLastFocus(true)}
-                    onBlur={() => setLastFocus(false)}
-                  ></Input>
-                </InputGroup>
-                <div className="textarea-container">
-                  <Input
-                    cols="80"
-                    name="name"
-                    placeholder="Type a message..."
-                    rows="4"
-                    type="textarea"
-                  ></Input>
-                </div>
-                <div className="send-button">
-                  <Button
-                    block
-                    className="btn-round"
-                    color="info"
-                    href="#pablo"
-                    onClick={e => e.preventDefault()}
-                    size="lg"
-                  >
-                    Send Message
-                  </Button>
-                </div>
-              </Col>
-            </Row>
-          </Container>
-        </div>
-        <DefaultFooter />
+        </div> */}
+        <DarkFooter />
       </div>
     </>
   );
