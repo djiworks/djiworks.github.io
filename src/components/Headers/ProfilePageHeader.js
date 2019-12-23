@@ -30,13 +30,13 @@ function ProfilePageHeader() {
         <div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("assets/img/bg5.jpg") + ")"
+            backgroundImage: "url(" + require("assets/img/forest.jpg") + ")"
           }}
           ref={pageHeader}
         ></div>
         <Container>
           <div className="photo-container">
-            <img alt="photo de djothi" src={require("assets/img/ryan.jpg")}></img>
+            <img alt="djothi" src={require("assets/img/ryan.jpg")}></img>
           </div>
           <h3 className="title">Djothi Grondin</h3>
           <p className="category">Technical & Business Engineer</p>

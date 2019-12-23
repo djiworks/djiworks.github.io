@@ -14,19 +14,24 @@ import {
 
 const items = [
   {
-    src: require("assets/img/bg1.jpg"),
-    altText: "Nature, United States",
-    caption: "Nature, United States"
+    src: require("assets/img/forest.jpg"),
+    altText: "Les Makes, La Réunion",
+    caption: "Les Makes, La Réunion"
   },
   {
-    src: require("assets/img/bg3.jpg"),
-    altText: "Somewhere Beyond, United States",
-    caption: "Somewhere Beyond, United States"
+    src: require("assets/img/marseille.jpg"),
+    altText: "Les Calanques, Marseille",
+    caption: "Les Calanques, Marseille"
   },
   {
-    src: require("assets/img/bg4.jpg"),
-    altText: "Yellowstone National Park, United States",
-    caption: "Yellowstone National Park, United States"
+    src: require("assets/img/savane.jpg"),
+    altText: "La Savanne, La Réunion",
+    caption: "La Savanne, La Réunion"
+  },
+  {
+    src: require("assets/img/maurice.jpg"),
+    altText: "Plage, Maurice",
+    caption: "Plage, Maurice"
   }
 ];
 

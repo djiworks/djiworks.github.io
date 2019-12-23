@@ -148,26 +148,26 @@ function ProfilePage() {
                     <Row className="collections">
                       <Col md="6">
                         <img
-                          alt="..."
+                          alt="les calanques de marseille"
                           className="img-raised"
-                          src={require("assets/img/bg1.jpg")}
+                          src={require("assets/img/marseille.jpg")}
                         ></img>
                         <img
-                          alt="..."
+                          alt="savanne"
                           className="img-raised"
-                          src={require("assets/img/bg3.jpg")}
+                          src={require("assets/img/savane.jpg")}
                         ></img>
                       </Col>
                       <Col md="6">
                         <img
-                          alt="..."
+                          alt="plage de maurice"
                           className="img-raised"
-                          src={require("assets/img/bg8.jpg")}
+                          src={require("assets/img/maurice.jpg")}
                         ></img>
                         <img
-                          alt="..."
+                          alt="fôret de la réunion"
                           className="img-raised"
-                          src={require("assets/img/bg7.jpg")}
+                          src={require("assets/img/forest.jpg")}
                         ></img>
                       </Col>
                     </Row>
