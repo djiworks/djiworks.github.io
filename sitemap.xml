@@ -12,17 +12,12 @@
   <changefreq>yearly</changefreq>
 </url>
 <url>
-  <loc>http://djiworks.github.io/#presentation</loc>
+  <loc>http://djiworks.github.io/profile-page</loc>
   <priority>0.9</priority>
   <changefreq>yearly</changefreq>
 </url>
 <url>
-  <loc>http://djiworks.github.io/#projets</loc>
-  <priority>0.9</priority>
-  <changefreq>yearly</changefreq>
-</url>
-<url>
-  <loc>http://djiworks.github.io/#galerie</loc>
+  <loc>http://djiworks.github.io/landing-page</loc>
   <priority>0.9</priority>
   <changefreq>yearly</changefreq>
 </url>
