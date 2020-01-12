@@ -48,6 +48,9 @@ function ProfilePage() {
                 color="info"
                 id="tooltip515203352"
                 size="lg"
+                rel="nofollow"
+                target="_blank"
+                href="/CV_Djothi_Grondin.pdf"
               >
                 Mon CV Général
               </Button>
@@ -59,6 +62,9 @@ function ProfilePage() {
                 color="success"
                 id="tooltip340339231"
                 size="lg"
+                rel="nofollow"
+                target="_blank"
+                href="/CV_Djothi_Grondin.pdf"
               >
                 Mon CV Technique
               </Button>
@@ -144,6 +150,18 @@ function ProfilePage() {
               </Col>
               <TabContent className="gallery" activeTab={"pills" + pills}>
                 <TabPane tabId="pills1">
+                  <div className="text-center">
+                    <Button
+                      className="btn-round ml-4"
+                      color="danger"
+                      size="lg"
+                      href="https://www.shutterstock.com/g/Djiworks"
+                      target="_blank"
+                      rel="nofollow"
+                    >
+                      Encore plus ?
+                    </Button>
+                  </div>
                   <Col className="ml-auto mr-auto" md="10">
                     <Row className="collections">
                       <Col md="6">
@@ -187,7 +205,7 @@ function ProfilePage() {
                             </CardText>
                             <Button
                               color="primary"
-                              href="https://followme-server.herokuapp.com/"
+                              href="https://followmev2.herokuapp.com"
                               target="_blank"
                               rel="nofollow"
                             >
