@@ -75,7 +75,7 @@ function IndexNavbar() {
             <Nav navbar>
               <NavItem>
                 <NavLink
-                  href="/profile-page"
+                  href="#/profile-page"
                 >
                   <i className="now-ui-icons business_badge"></i>
                   <p>A propos</p>
@@ -83,7 +83,7 @@ function IndexNavbar() {
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="/landing-page"
+                  href="#/landing-page"
                 >
                   <i className="now-ui-icons tech_laptop"></i>
                   <p>Informatique</p>

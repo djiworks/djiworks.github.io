@@ -19,7 +19,7 @@ function DarkFooter() {
             </li>
             <li>
               <a
-                href="/profile-page"
+                href="#/profile-page"
               >
                 A propos
               </a>

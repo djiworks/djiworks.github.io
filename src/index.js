@@ -17,7 +17,7 @@
 */
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
+import { HashRouter, Route, Switch, Redirect } from "react-router-dom";
 
 // styles for this kit
 import "assets/css/bootstrap.min.css";
@@ -32,7 +32,7 @@ import LandingPage from "views/examples/LandingPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
 
 ReactDOM.render(
-  <BrowserRouter>
+  <HashRouter>
     <Switch>
       <Switch>
         <Route path="/index" render={props => <Index {...props} />} />
@@ -53,6 +53,6 @@ ReactDOM.render(
         <Redirect from="/" to="/index" />
       </Switch>
     </Switch>
-  </BrowserRouter>,
+  </HashRouter>,
   document.getElementById("root")
 );

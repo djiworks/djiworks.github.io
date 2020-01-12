@@ -21,7 +21,7 @@ function NucleoIcons() {
               <Button
                 className="btn-round"
                 color="info"
-                href="/landing-page"
+                href="#/landing-page"
                 outline
                 size="lg"
               >
