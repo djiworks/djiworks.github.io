@@ -119,6 +119,16 @@ function IndexNavbar() {
               </NavItem>
               <NavItem>
                 <NavLink
+                  href="https://shop.spreadshirt.fr/66-oceans/"
+                  target="_blank"
+                  rel="nofollow"
+                >
+                  <i className="now-ui-icons shopping_shop"></i>
+                  <p>E-Commerce</p>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink
                   href="https://www.linkedin.com/in/djothi-grondin-5b60b3100/"
                   target="_blank"
                   id="facebook-tooltip"
