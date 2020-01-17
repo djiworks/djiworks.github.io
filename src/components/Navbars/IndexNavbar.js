@@ -75,6 +75,14 @@ function IndexNavbar() {
             <Nav navbar>
               <NavItem>
                 <NavLink
+                  href="/"
+                >
+                  <i className="now-ui-icons location_world"></i>
+                  <p>Accueil</p>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink
                   href="#/profile-page"
                 >
                   <i className="now-ui-icons business_badge"></i>
